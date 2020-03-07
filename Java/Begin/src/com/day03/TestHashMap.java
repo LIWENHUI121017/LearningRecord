@@ -8,7 +8,7 @@ public class TestHashMap {
      * 统计一句话中各个字符的个数
      * */
     public void countNums() {
-        String str = "good good study,day day up.";//111
+        String str = "good good study,day day up.";//1111
         String newstr = str.replaceAll("[\\s*,*.*]", "");
         String[] arr = newstr.split("");
         System.out.println(Arrays.toString(arr));
