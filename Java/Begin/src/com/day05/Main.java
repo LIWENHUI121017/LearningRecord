@@ -8,8 +8,11 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        TestMoveFile tmf = new TestMoveFile();
+//        TestMoveFile tmf = new TestMoveFile();
 //        tmf.testMove();
-        tmf.testMove2();
+//        tmf.testMove2();
+        TestSerialEmps tse = new TestSerialEmps();
+        tse.testWriter();
+//        tse.testRead();
     }
 }
