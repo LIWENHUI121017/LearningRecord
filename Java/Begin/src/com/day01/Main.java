@@ -31,7 +31,7 @@ public class Main {
         Calendar c = Calendar.getInstance();
         c.setTime(date);
         c.add(Calendar.DATE, days);//保质期前的14天
-        c.set(Calendar.DAY_OF_WEEK,4);//设置为星期三的日期，星期日是1 所以星期三是420
+        c.set(Calendar.DAY_OF_WEEK,4);//设置为星期三的日期，星期日是1 所以星期三是4
         System.out.println("促销日为：" + sdf.format(c.getTime()));
     }
 }

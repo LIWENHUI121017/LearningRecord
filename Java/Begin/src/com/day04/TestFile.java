@@ -9,7 +9,7 @@ public class TestFile {
      * 创建文件
      */
     public void testCreateNewFile() throws IOException {
-        File file = new File("demo" + File.separator + "Hello.txt");
+        File file = new File( "fos.dat");
         //若不存在就创建
         if (!file.exists()) {
             file.createNewFile();
