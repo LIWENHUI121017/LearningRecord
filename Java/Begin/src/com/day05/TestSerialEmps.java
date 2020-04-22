@@ -24,9 +24,9 @@ public class TestSerialEmps {
         emps.add(new Emp("张三",33,"男",9000));
         emps.add(new Emp("李四",26,"男",5000));
         emps.add(new Emp("王五",48,"男",33000));
-//        oos.writeObject(emps);
+        oos.writeObject(emps);
         System.out.println("序列化完毕");
-        System.out.println(emps);
+//        System.out.println(emps);
         oos.close();
     }
 
