@@ -7,7 +7,7 @@ public class FileUtils {
     /**
      * 对复制文件的代码添加异常捕获机制
      */
-    public void testCopy() {
+    public void testCopy() throws CopyException{
         FileInputStream fis = null;
         FileOutputStream fos = null;
         try {
@@ -19,11 +19,11 @@ public class FileUtils {
             }
             System.out.println("复制完毕");
         } catch (FileNotFoundException e) {
-            System.err.println("文件没有找到");
-            e.printStackTrace();
+           throw new CopyException("文件没找到",e);
         } catch (IOException e) {
-            System.err.println("读写异常");
-            e.printStackTrace();
+//            System.err.println("读写异常");
+            throw new CopyException("读写异常",e);
+//            e.printStackTrace();
         } finally {
             if (fis != null) {
                 try {

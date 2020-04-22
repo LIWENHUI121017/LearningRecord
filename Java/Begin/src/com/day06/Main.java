@@ -12,11 +12,13 @@ public class Main {
         //测试异常处理
 //        FileUtils ft = new FileUtils();
 //        ft.testCopy();
-        TestRuntimeException tre = new TestRuntimeException();
+//        TestRuntimeException tre = new TestRuntimeException();
 //        tre.testNullPointerException();
 //        tre.testArrayIndexOutOfBoundsException();
 //        tre.testArithmeticException();
 //        tre.testClassCastException();
-        tre.testNumberFormatException();
+//        tre.testNumberFormatException();
+        TestBrAndPw tbap = new TestBrAndPw();
+        tbap.testBrAndPw();
     }
 }
