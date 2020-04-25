@@ -4,6 +4,7 @@ package com.array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,9 +21,13 @@ public class Main {
 //        ra.rotate(arr, k);
 //        System.out.println(Arrays.toString(arr));
 
-        int[] arr = {5, 2, 3, 7, 6, 4, 5};
-        DuplicateElements de = new DuplicateElements();
-        System.out.println(de.containsDuplicate(arr));
+//        int[] arr = {5, 2, 3, 7, 6, 4, 5};
+//        DuplicateElements de = new DuplicateElements();
+//        System.out.println(de.containsDuplicate(arr));
+
+        int[] arr = {1,1,2,3,3,4,2};
+        SingleNumber sn = new SingleNumber();
+        System.out.println(sn.singleNumber(arr));
     }
 
 
