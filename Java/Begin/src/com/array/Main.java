@@ -25,9 +25,13 @@ public class Main {
 //        DuplicateElements de = new DuplicateElements();
 //        System.out.println(de.containsDuplicate(arr));
 
-        int[] arr = {1,1,2,3,3,4,2};
-        SingleNumber sn = new SingleNumber();
-        System.out.println(sn.singleNumber(arr));
+//        int[] arr = {1,1,2,3,3,4,2};
+//        SingleNumber sn = new SingleNumber();
+//        System.out.println(sn.singleNumber(arr));
+
+        int[]nums1 = {1,2,2,1,2}, nums2 = {2,2,2};
+        Intersect is = new Intersect();
+        System.out.println(Arrays.toString(is.intersect(nums1,nums2)));
     }
 
 
