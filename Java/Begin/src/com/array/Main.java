@@ -29,9 +29,14 @@ public class Main {
 //        SingleNumber sn = new SingleNumber();
 //        System.out.println(sn.singleNumber(arr));
 
-        int[]nums1 = {1,2,2,1,2}, nums2 = {2,2,2};
-        Intersect is = new Intersect();
-        System.out.println(Arrays.toString(is.intersect(nums1,nums2)));
+//        int[]nums1 = {1,2,2,1,2}, nums2 = {2,2,2};
+//        Intersect is = new Intersect();
+//        System.out.println(Arrays.toString(is.intersect(nums1,nums2)));
+//
+
+        int[] nums = {9,9,9};
+        PlusOne po = new PlusOne();
+        System.out.println(Arrays.toString(po.plusOne(nums)));
     }
 
 
