@@ -34,9 +34,14 @@ public class Main {
 //        System.out.println(Arrays.toString(is.intersect(nums1,nums2)));
 //
 
-        int[] nums = {9,9,9};
-        PlusOne po = new PlusOne();
-        System.out.println(Arrays.toString(po.plusOne(nums)));
+//        int[] nums = {9,9,9};
+//        PlusOne po = new PlusOne();
+//        System.out.println(Arrays.toString(po.plusOne(nums)));
+
+        int[] nums = {2,1};
+        MoveZeroes mz = new MoveZeroes();
+        mz.moveZeroes(nums);
+        System.out.println(Arrays.toString(nums));
     }
 
 
