@@ -38,10 +38,15 @@ public class Main {
 //        PlusOne po = new PlusOne();
 //        System.out.println(Arrays.toString(po.plusOne(nums)));
 
-        int[] nums = {2,1};
-        MoveZeroes mz = new MoveZeroes();
-        mz.moveZeroes(nums);
-        System.out.println(Arrays.toString(nums));
+//        int[] nums = {2,1};
+//        MoveZeroes mz = new MoveZeroes();
+//        mz.moveZeroes(nums);
+//        System.out.println(Arrays.toString(nums));
+
+        int[] nums = {9,6,3,3,2,1};
+        TwoSum ts = new TwoSum();
+        int[] res = ts.twoSum(nums,3);
+        System.out.println(Arrays.toString(res));
     }
 
 
