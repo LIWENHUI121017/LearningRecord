@@ -43,10 +43,23 @@ public class Main {
 //        mz.moveZeroes(nums);
 //        System.out.println(Arrays.toString(nums));
 
-        int[] nums = {9,6,3,3,2,1};
-        TwoSum ts = new TwoSum();
-        int[] res = ts.twoSum(nums,3);
-        System.out.println(Arrays.toString(res));
+//        int[] nums = {9,6,3,3,2,1};
+//        TwoSum ts = new TwoSum();
+//        int[] res = ts.twoSum(nums,3);
+//        System.out.println(Arrays.toString(res));
+        IsValidSudoku ivs = new IsValidSudoku();
+        char[][] arr =  new char[][]{
+            {'5', '.', '3', '.', '.', '.', '.', '.', '.'},
+            {'.', '.', '.', '3', '.', '.', '.', '.', '.'},
+            {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
+            {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
+            {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
+            {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
+            {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
+            {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
+            {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
+        };
+        System.out.println(ivs.isValidSudoku(arr));
     }
 
 
