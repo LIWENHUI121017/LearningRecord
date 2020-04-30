@@ -47,19 +47,41 @@ public class Main {
 //        TwoSum ts = new TwoSum();
 //        int[] res = ts.twoSum(nums,3);
 //        System.out.println(Arrays.toString(res));
-        IsValidSudoku ivs = new IsValidSudoku();
-        char[][] arr =  new char[][]{
-            {'5', '.', '3', '.', '.', '.', '.', '.', '.'},
-            {'.', '.', '.', '3', '.', '.', '.', '.', '.'},
-            {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
-            {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
-            {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
-            {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
-            {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
-            {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
-            {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
+//        IsValidSudoku ivs = new IsValidSudoku();
+//        char[][] arr =  new char[][]{
+//            {'5', '.', '3', '.', '.', '.', '.', '.', '.'},
+//            {'.', '.', '.', '3', '.', '.', '.', '.', '.'},
+//            {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
+//            {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
+//            {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
+//            {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
+//            {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
+//            {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
+//            {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
+//        };
+//        System.out.println(ivs.isValidSudoku(arr));
+        int[][] matrix = new int[][]{
+                {7, 4, 1, 9},
+                {8, 5, 2, 7},
+                {9, 6, 3, 6},
+                {1, 9, 2, 5},
         };
-        System.out.println(ivs.isValidSudoku(arr));
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println("");
+        }
+        Rotate r = new Rotate();
+        r.rotate(matrix);
+        System.out.println("");
+
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println("");
+        }
     }
 
 
